@@ -1,5 +1,5 @@
 import { ChildContextProvider, createContext, HTMLAttributes } from "react";
-import { Theme } from "fiskaz";
+import { Theme, webLightTheme } from "fiskaz";
 import { useStyles } from "./useStyles.styles";
 
 type ThemeContextValue = Theme | Partial<Theme> | undefined;
@@ -8,11 +8,11 @@ const ThemeContext = createContext<ThemeContextValue>(undefined);
 export type ThemeProviderProps = HTMLAttributes<
   ChildContextProvider<ThemeContextValue>
 > & {
-  theme: ThemeContextValue;
+  theme?: ThemeContextValue;
 };
 export function ThemeProvider({
   className,
-  theme,
+  theme = webLightTheme,
   children,
   ...restProps
 }: ThemeProviderProps) {
