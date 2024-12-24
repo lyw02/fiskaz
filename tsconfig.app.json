@@ -23,7 +23,8 @@
     "noUncheckedSideEffectImports": true,
     "paths": {
       "fiskaz": ["./src/index.ts"]
-    }
+    },
+    "types": ["vitest/globals"]
   },
   "include": ["src"]
 }

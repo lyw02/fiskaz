@@ -5,11 +5,11 @@ export function createCSSRuleFromTheme(
   theme: Theme | PartialTheme | undefined
 ): string {
   if (theme) {
-    const cssVarsAsString = (
-      Object.keys(theme) as (keyof typeof theme)[]
-    ).reduce((cssVarRule, cssVar) => {
-      return `${cssVarRule}--${cssVar}: ${theme[cssVar]}; `;
-    }, "");
+    const cssVarsAsString = (Object.keys(theme) as (keyof typeof theme)[])
+      .reduce((cssVarRule, cssVar) => {
+        return `${cssVarRule}--${cssVar}: ${theme[cssVar]}; `;
+      }, "")
+      .trim();
 
     return `${selector} { ${cssVarsAsString} }`;
   }

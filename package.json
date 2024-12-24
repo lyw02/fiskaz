@@ -11,7 +11,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "stb": "pnpm run storybook",
-    "stb-docs": "storybook dev --docs"
+    "stb-docs": "storybook dev --docs",
+    "test": "vitest"
   },
   "dependencies": {
     "@griffel/react": "^1.5.27",
@@ -28,6 +29,8 @@
     "@storybook/react": "8.4.7",
     "@storybook/react-vite": "8.4.7",
     "@storybook/test": "8.4.7",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.1.0",
     "@types/node": "^22.10.2",
     "@types/react": "^18.3.17",
     "@types/react-dom": "^18.3.5",
@@ -37,10 +40,12 @@
     "eslint-plugin-react-refresh": "^0.4.16",
     "eslint-plugin-storybook": "^0.11.1",
     "globals": "^15.13.0",
+    "jsdom": "^25.0.1",
     "storybook": "8.4.7",
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.18.1",
-    "vite": "^6.0.3"
+    "vite": "^6.0.3",
+    "vitest": "^2.1.8"
   },
   "eslintConfig": {
     "extends": [
