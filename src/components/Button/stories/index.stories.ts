@@ -7,7 +7,7 @@ import CustomSource from "./Custom.stories?raw";
 import { Button } from "fiskaz";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
-const meta = {
+const meta: Meta<typeof Button> = {
   title: "Example/Button",
   component: Button,
   parameters: {

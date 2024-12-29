@@ -7,7 +7,7 @@ import DefaultSource from "./Default.stories?raw";
 // @ts-expect-error - required for ts
 import NestedSource from "./Nested.stories?raw";
 
-const meta = {
+const meta: Meta<typeof ThemeProvider> = {
   title: "Theme/ThemeProvider",
   component: ThemeProvider,
 } satisfies Meta<typeof ThemeProvider>;
